@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI 소개</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #33a474;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between; /* 가운데 정렬 및 간격 확보 */
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header .btn {
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        header .btn:hover {
+            background-color: #2c67b1;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .mbti-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .mbti-type {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .mbti-type:hover {
+            background-color: #f0f0f0;
+        }
+
+        .mbti-type h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .mbti-type p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .mbti-type a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #4285f4;
+            font-weight: bold;
+        }
+
+        .mbti-type a:hover {
+            text-decoration: underline;
+        }
+
+        .ad {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .ad img {
+            width: 100%;
+            max-width: 360px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .test-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .test-button a {
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .test-button a:hover {
+            background-color: #2c67b1;
+        }
+
+        .mbti-info {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .mbti-info img {
+            width: 120px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .mbti-info p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://pakhotin.org/wp-content/uploads/2024/04/444-1-1024x576.png" alt="Header Image">
+    </header>
+</style>
+</head>
+<body>
+    <header>
+        <h1>MBTI의 종류</h1>
+        <a href="https://www.16personalities.com/free-personality-test" class="btn">검사하러 가기</a>
+    </header>
+
+    <main>
+        <div class="mbti-types">
+            <div class="mbti-type" id="ISTJ" onclick="openMBTILink('https://www.16personalities.com/istj-personality')">
+                <h2>ISTJ</h2>
+                <p>성실하고 신중하며 조직적인 사람들입니다. 자신의 의무를 충실히 수행하며 안정과 안심을 추구합니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="ISFJ" onclick="openMBTILink('https://www.16personalities.com/isfj-personality')">
+                <h2>ISFJ</h2>
+                <p>용감하고 충실하며 따뜻한 사람들입니다. 다른 사람의 필요를 먼저 생각하며 신뢰할 수 있는 사람입니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="INFJ" onclick="openMBTILink('https://www.16personalities.com/infj-personality')">
+                <h2>INFJ</h2>
+                <p>열정적이고 이상주의적인 사람들입니다. 깊이 있는 이해와 인간적 가치를 중시합니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="INTJ" onclick="openMBTILink('https://www.16personalities.com/intj-personality')">
+                <h2>INTJ</h2>
+                <p>독립적이고 혁신적인 사람들입니다. 목표 달성을 위해 계획하고 실행하는 경향이 있습니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="ISTP" onclick="openMBTILink('https://www.16personalities.com/istp-personality')">
+                <h2>ISTP</h2>
+                <p>호기심이 많고 현실적인 사람들입니다. 문제 해결 능력이 뛰어나며 적응력이 강합니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="ISFP" onclick="openMBTILink('https://www.16personalities.com/isfp-personality')">
+                <h2>ISFP</h2>
+                <p>온화하고 친절한 사람들입니다. 예술적인 면이 있으며 자연을 사랑합니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="INFP" onclick="openMBTILink('https://www.16personalities.com/infp-personality')">
+                <h2>INFP</h2>
+                <p>이상주의자적이고 상상력이 풍부한 사람들입니다. 진정성과 개인적 가치를 중시합니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="INTP" onclick="openMBTILink('https://www.16personalities.com/intp-personality')">
+                <h2>INTP</h2>
+                <p>논리적이고 분석적인 사람들입니다. 지적 호기심이 많고 독창적입니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="ESTP" onclick="openMBTILink('https://www.16personalities.com/estp-personality')">
+                <h2>ESTP</h2>
+                <p>행동적이고 현실적인 사람들입니다. 문제 해결 능력이 뛰어나며 다재다능하고 융통성이 있습니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="ESFP" onclick="openMBTILink('https://www.16personalities.com/esfp-personality')">
+                <h2>ESFP</h2>
+                <p>사교적이고 재능이 많은 사람들입니다. 즉흥적이고 에너지 넘치는 성향을 가지고 있습니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="ENFP" onclick="openMBTILink('https://www.16personalities.com/enfp-personality')">
+                <h2>ENFP</h2>
+                <p>열정적이고 창의적인 사람들입니다. 새로운 아이디어에 열려 있으며 탐구하고 발전하는 것을 즐깁니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="ENTP" onclick="openMBTILink('https://www.16personalities.com/entp-personality')">
+                <h2>ENTP</h2>
+                <p>독창적이고 비판적 사고를 잘하는 사람들입니다. 새로운 가능성을 탐색하고 도전을 즐깁니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="ESTJ" onclick="openMBTILink('https://www.16personalities.com/estj-personality')">
+                <h2>ESTJ</h2>
+                <p>신중하고 현실적인 사람들입니다. 질서와 조직을 중시하며 목표 달성을 위해 노력합니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="ESFJ" onclick="open('https://www.16personalities.com/esfj-personality')">
+                <h2>ESFJ</h2>
+                <p>사교적이고 친근한 사람들입니다. 타인의 감정에 민감하며 도움을 주는 것을 즐깁니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="ENFJ" onclick="openMBTILink('https://www.16personalities.com/enfj-personality')">
+                <h2>ENFJ</h2>
+                <p>열정적이고 인내심이 강한 사람들입니다. 사람들과 협력하고 도움을 주며 다른 사람의 성장을 장려합니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="mbti-type" id="ENTJ" onclick="openMBTILink('https://www.16personalities.com/entj-personality')">
+                <h2>ENTJ</h2>
+                <p>대담하고 목표 지향적인 사람들입니다. 리더십 능력이 뛰어나며 목표를 달성하기 위해 계획을 세웁니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <div class="ad">
+            <h2>광고</h2>
+            <a href="https://googleads.g.doubleclick.net/aclk?sa=l&ai=ClqXokfN8ZoToKqiCpt8PldOg4ASrz_LNeN2xzLnWEoOjprejAxABIL6YmXxgm8v-jsApoAHNhZPzAsgBAuACAKgDAcgDCKoEuwJP0G1enYlVNzwvjtFMN7Ch9NTrYBJUxk-jF_zfAPnfALlKHXSKUf3c7BzXckH2kLocpYnB3z9g2TC6K6EYWN39Vh4-arplilNTTt3UjA17vVRsM0nGx5UQv3BhMj4l23dl98WwMtxKDMJGfSqrwR-3CZIGcm4lojA2kfaU_zQ1NzXIy2iJAA1aqchpLvUQymYbNK8UaFRPzStEdAgCks-PYw-qHog1ZVQXq5fX_tikrPfc9Yzi4Sf6BfkPuYo_bckTwUtQjLIMbgcKKFxIYKK1fFcdru9_DgiZyKj4gNVihxsLH8iGKwm9MJ30LSWnfUQ8cKtpTOHIf7BOqQ42MfoafdCvQjkc1q6ln6xWJbjCmicThRO5gI9yPnNNz5LjtTcV2uAsFF_8siIDwidCvdyTaiWNg4FxnjdgUvjABLGj7MnMBOAEAYgF5tqsz02gBgKAB4e1pJMEqAfZtrECqAfVyRuoB6a-G6gHjs4bqAeT2BuoB-6WsQKoB_6esQKoB6--sQKoB5oGqAfz0RuoB5bYG6gHqpuxAqgHg62xAqgH4L2xAqgH_56xAqgH35-xAqgHyqmxAqgH66WxAqgH6rGxAqgHmbWxAqgHvrexAqgH-MKxAqgH-8KxAtgHAdIIJAiAYRABGB0yAooCOgmAQIDAgICAoChIvf3BOliv1cHcgfuGA7EJWjuY88jNaFeACgOYCwHICwHaDBEKCxCAs4Px-8OGm_EBEgIBA6oNAktSyA0B4g0TCLiDwtyB-4YDFSiB6QUdlSkITNgTDNAVAfgWAYAXAboXAjgBshgJEgKwUxgCIgEA0BgB6BgB&ae=1&ase=2&gclid=EAIaIQobChMIxPTH3IH7hgMVKIHpBR2VKQhMEAEYASAAEgLPcvD_BwE&num=1&cid=CAQSTwDaQooL8zZkm8u6uwBr6hwSJ270d60EY8g1Lv4KPqoPZdy8z_4sQG7EwnQsIZmADTGfM77lislWd-t0DBoXTYl2UtGnxpgBPKGw1XpdRGsYAQ&sig=AOD64_2BEzLRjgoF8ZRZVHzScq7r73bvCA&client=ca-pub-4344406045537542&rf=5&nx=220&ny=63&uap=UACH(platform)&uapv=UACH(platformVersion)&uaa=UACH(architecture)&uam=UACH(model)&uafv=UACH(uaFullVersion)&uab=UACH(bitness)&uaw=UACH(wow64)&uafvl=UACH(fullVersionList)&nb=2&adurl=https://h5.g123.jp/game/blacklagoon%3Flang%3Dko%26platform%3Dauto%26utm_source%3Dgoogle%26utm_campaign%3Dblacklagoon_ko_NewDisplayCreateroleOptimizeCreateroleExisting_adn_all%26utm_adgroup%3Dcr_normal_placement_pc%26utm_content%3Dblacklagoon20240611_ko_je2_300-250.jpg%26gad_source%3D5%26gclid%3DEAIaIQobChMIxPTH3IH7hgMVKIHpBR2VKQhMEAEYASAAEgLPcvD_BwE">
+                <img src="https://tpc.googlesyndication.com/simgad/5028532593140970654?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qmNr1cZFyI4z-g-hBxApwHBFe1hWA/360x250" alt="광고 이미지">
+            </a>
+        </div>
+    </aside>
+
+    <script>
+        function openMBTILink(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
